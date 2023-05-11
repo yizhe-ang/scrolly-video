@@ -3,14 +3,14 @@
   import ScrollyVideo from './ScrollyVideo.js';
 
   // variable to hold the DOM element
-  let scrollyVideoContainer;
+  export let scrollyVideoContainer = null;
 
   // variable to hold the scrollyVideo object
-  let scrollyVideo;
+  export let scrollyVideo = null;
 
   // Store the props so we know when things change
   let lastPropsString = '';
-  
+
   $: {
     if (scrollyVideoContainer) {
       // separate out the videoPercentage prop

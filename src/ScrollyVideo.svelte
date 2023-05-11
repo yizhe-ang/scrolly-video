@@ -2,6 +2,7 @@
   import { onDestroy } from 'svelte';
   import ScrollyVideo from './ScrollyVideo.js';
 
+  // TODO: Expose some of the elements?
   // variable to hold the DOM element
   let scrollyVideoContainer;
 
@@ -10,7 +11,7 @@
 
   // Store the props so we know when things change
   let lastPropsString = '';
-  
+
   $: {
     if (scrollyVideoContainer) {
       // separate out the videoPercentage prop

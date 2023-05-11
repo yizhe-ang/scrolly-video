@@ -69,9 +69,9 @@ class ScrollyVideo {
     // eslint-disable-next-line no-undef
     this.video = document.createElement('video');
     this.video.src = src;
-    this.video.preload = 'auto';
+    this.video.preload = 'auto'; // browser will load the entire video when the page loads
     this.video.tabIndex = 0;
-    this.video.autobuffer = true;
+    this.video.autobuffer = true; // buffers the video to prepare for playback
     this.video.playsInline = true;
     this.video.muted = true;
     this.video.pause();
